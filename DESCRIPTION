@@ -1,0 +1,34 @@
+Package: dataSplitAlgorithm
+Title: Data splitting algorithms for dividing raw data into multiple data subsets with consistent distribution characteristics
+Version: 1.0.0
+Authors@R: 
+    person(
+    	given="Feifei", 
+    	family="Zheng",
+    	email="feifeizheng@zju.edu.cn", 
+    	role=c("aut", "fnd"),
+      comment=c(ORCID = "")
+    )
+    person(
+    	given="Junyi", 
+    	family="Chen",
+    	email="jun1chen@zju.edu.cn", 
+    	role=c("aut", "cre"),
+      comment=c(ORCID = "0009-0001-1978-6475")
+    )
+Description: The package provides six data splitting algorithms that can divide raw data into training sets, test sets and verification sets with consistent distribution characteristics.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    caret,
+    kohonen,
+    Matrix,
+    pROC,
+    stats,
+    utils,
+    xgboost
+Depends: 
+    R (>= 2.10)
+LazyData: true
