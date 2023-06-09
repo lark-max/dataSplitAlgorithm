@@ -11,21 +11,30 @@ characteristics. <!-- badges: end -->
 
 ## Installation
 
-Here are two ways to install this package in Rstudio on your PC  
+Here are two ways to install this package in Rstudio on your PC:  
 
-You can install the package like so:  
-(ensure that you have installed the package `devtools`)  
-
+Way 1:
+Firstly ensure that you have installed the package `devtools`:  
+```r
+install.packages("devtools")
+```
+Then you can install the package like so: 
 ``` r
 devtools::install_github("lark-max/dataSplitAlgorithm")
 ```
-Alternatively, you can download the zip package provided in release,
+  
+Way 2:
+You can download the zip package provided in the `release` page,
 and install the package by hand:  
 ```r
-install.packages("dataSplitAlgorithm_1.0.0.tar.gz",repos=NULL,type="source")
+install.packages("dataSplitAlgorithm_1.0.0.tar.gz",repos = NULL,type = "source")
 ```
-
-You can then use `library(dataSplitAlgorithm)` to load the package.
+  
+After installation,  
+You can then load the package by:  
+```r
+library(dataSplitAlgorithm)
+```
 
 ## Instruction
 
@@ -51,34 +60,34 @@ information have default defaults, you can refer to the `par.default()`
 provided in the package, which is shown as below:
 
 ``` r
-`include.inp`   
+[include.inp]   
 Whether the input vector is included when calculating Euclidean distance between samples, which defaults to TRUE
 
-`seed`  
+[seed]  
 Seed number, which defaults to 1000
 
-`sel.alg`   
+[sel.alg]   
 Algorithm selection, includes SOMPLEX, MDUPLEX, DUPLEX, SBSS.P, TC, which defaults to "MDUPLEX"
 
-`prop.Tr`   
+[prop.Tr]   
 The proportion of data allocated to the training set, which defaults to 0.6
 
-`prop.Ts`   
+[prop.Ts]    
 The proportion of data allocated to the test set, which defaults to 0.2
 
-`Train` 
+[Train] 
 The name of the training set when the output file is required, which defaults to "Train.txt"
 
-`Test`  
+[Test]  
 The name of the test set when the output file is required, which defaults to "Test.txt"
 
-`Validation`    
+[Validation]    
 The name of the validation set when the output file is required, which defaults to "Valid.txt"
 
-`loc.calib` 
+[loc.calib] 
 If using the TC algorithm, you can also specify the location of the splitting range, which defaults to c(0,0.6)
 
-`writeFile` 
+[writeFile] 
 Whether to output the partition result to a txt file, which defaults to TRUE
 ```
 
