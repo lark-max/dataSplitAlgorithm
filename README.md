@@ -11,10 +11,18 @@ characteristics. <!-- badges: end -->
 
 ## Installation
 
-You can install the development version of dataSplitAlgorithm like so:
+Here are two ways to install this package in Rstudio on your PC  
+
+You can install the package like so:  
+(ensure that you have installed the package `devtools`)  
 
 ``` r
 devtools::install_github("lark-max/dataSplitAlgorithm")
+```
+Alternatively, you can download the zip package provided in release,
+and install the package by hand:  
+```r
+install.packages("dataSplitAlgorithm_1.0.0.tar.gz",repo=NULL,type="source")
 ```
 
 You can then use `library(dataSplitAlgorithm)` to load the package.
