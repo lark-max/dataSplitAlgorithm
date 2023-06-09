@@ -13,7 +13,7 @@ characteristics. <!-- badges: end -->
 
 Here are two ways to install this package in Rstudio on your PC:  
 
-Way 1:
+Way 1:  
 Firstly ensure that you have installed the package `devtools`:  
 ```r
 install.packages("devtools")
@@ -23,15 +23,14 @@ Then you can install the package like so:
 devtools::install_github("lark-max/dataSplitAlgorithm")
 ```
   
-Way 2:
+Way 2:  
 You can download the zip package provided in the `release` page,
 and install the package by hand:  
 ```r
 install.packages("dataSplitAlgorithm_1.0.0.tar.gz",repos = NULL,type = "source")
 ```
   
-After installation,  
-You can then load the package by:  
+After installation, You can then load the package by:  
 ```r
 library(dataSplitAlgorithm)
 ```
